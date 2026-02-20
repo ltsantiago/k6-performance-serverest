@@ -1,0 +1,12 @@
+{
+  "name": "m2.0-desafio1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:cadastroProdutos": "k6 run scripts/cadastroProdutos.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
