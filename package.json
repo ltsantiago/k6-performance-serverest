@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:cadastroProdutos": "k6 run scripts/cadastroProdutos.js"
+    "test:login": "k6 run k6/scripts/login.test.js",
+    "test:cadastroUsuarios": "k6 run k6/scripts/user.create.test.js",
+    "test:cadastroProdutos": "k6 run k6/scripts/product.create.test.js",
+    "test:grafana": "k6 run --out influxdb=http://localhost:8086/k6 k6/scripts/product.create.test.js"
   },
   "keywords": [],
   "author": "",
