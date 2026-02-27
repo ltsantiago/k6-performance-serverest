@@ -13,7 +13,7 @@ export const options = {
 };
 
 export default function () {
-  const res = http.post(`${BASE_URL}/usuarios`, JSON.stringify(USER), { headers: { 'Content-Type': 'application/json' } });
+  const res = http.post(`${BASE_URL}/usuarios`, JSON.stringify(USERNAME), { headers: { 'Content-Type': 'application/json' } });
 
   console.log(res.json().message);
 

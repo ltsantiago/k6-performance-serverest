@@ -4,9 +4,8 @@ import { BASE_URL } from '../utils/config.js';
 import { loginAndGetToken } from '../utils/auth.js';
 
 export const options = {
-  vus: 1,
-  iterations: 1,
-  duration: '30s',
+  vus: 100,
+  iterations: 100,
   thresholds: {
     http_req_duration: ['p(95)<1000'],
     http_req_failed: ['rate<0.02'],
